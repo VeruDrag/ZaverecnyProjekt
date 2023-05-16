@@ -14,9 +14,17 @@
 </head>
 <body>
 
+	{% set isHomePage = (page.url === '/') %}
+
+
 
 		<header class="header">
 			<div class="wrapper">		
+				{% if isHomePage %}
+				<div class="cover-img">
+					<img src="/img/pozadi.jpg" alt="finanční poradenství">
+				</div>
+				{% endif %}
 
 				<nav class="menu">
 					<ul class="menu__list bg-menu">
@@ -28,6 +36,7 @@
 						<li class="menu__item"><a href="/Ome/" class="menu__link">O mě</a></li>
 					</ul>
 				</nav>
+
 			</div>
 
 		</header>
