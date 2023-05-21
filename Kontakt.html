@@ -7,7 +7,7 @@ title: Kontakt
 <div class="wrapper">
     <div class="column-map">
         <div class="column-left">
-            <iframe src="https://mapy.cz/s/gedovurace" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe style="border:none" src="https://frame.mapy.cz/s/gudufozecu" width="400" height="280" frameborder="0"></iframe>
         </div>
     <div class="column-right">
         <h3>Kontakt</h3>
@@ -33,10 +33,10 @@ title: Kontakt
 </div>
 
 <form action="" class="contact-form">
-    <input type="text" placeholder="Jméno"><br>
-    <input type="text" placeholder="Přijmení"><br>
-    <input type="tell" placeholder="Telefonní kontakt"><br>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Text Vaší zprávy"></textarea><br>
+    <input type="text" placeholder="Jméno" onfocus="clearPlaceholder(this)"><br>
+    <input type="text" placeholder="Přijmení" onfocus="clearPlaceholder(this)"><br>
+    <input type="tel" placeholder="Telefonní kontakt" onfocus="clearPlaceholder(this)"><br>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Text Vaší zprávy" onfocus="clearPlaceholder(this)"></textarea><br>
     <input type="submit" value="Odeslat">
 </form>
 
